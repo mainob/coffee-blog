@@ -1,0 +1,16 @@
+nav .nav-link {
+    transition: all 0.3s;
+    color: var(--verde-oscuro);
+}
+nav .nav-link:hover{
+    transform:scale(1.15);
+    color:var(--verde-claro);
+}
+
+nav .navbar-brand {
+    color: var(--verde-oscuro);
+}
+
+nav .navbar-brand:hover {
+    color: var(--verde-claro);
+}
