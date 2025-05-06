@@ -4,6 +4,9 @@ html {
   }
 
   * {
-    font-family: font-main;
+    font-family: "Tuffy", sans-serif;
+  }
+
+  body {
     background-color: var(--beige);
   }
