@@ -28,7 +28,7 @@
 
 <body>
 	<!--Inicio Navbar-->
-	<nav class="navbar navbar-expand-lg sticky-top">
+	<nav class="navbar navbar-expand-lg sticky-top py-3">
 		<div class="container-fluid">
 			<a class="navbar-brand text-uppercase fw-semibold" href="index.html">Coffee & Tea</a>
 			<button class="navbar-toggler border-5 my-2" type="button" data-bs-toggle="collapse"
@@ -56,7 +56,7 @@
 	<main class="main-wrapper mt-2">
 		<section class="introduccion">
 			<div class="introduccion-contenido">
-				<h1>Quiénes somos</h1>
+				<h1 class="text-uppercase">Quiénes somos</h1>
 				<p>Bienvenidos a <strong>Coffee & Tea</strong>, un rincón acogedor para los amantes del café
 					y el té. Nacimos con la idea de crear un espacio donde las personas puedan disfrutar de bebidas
 					de calidad, acompañadas de un ambiente relajado y amigable. Nuestro compromiso es ofrecer una
@@ -73,7 +73,7 @@
 				<img src="assets/pic/prensa-francesa.png" alt="Prensa Francesa">
 			</div>
 			<div class="motivo-contenido">
-				<h2>¿Por qué existe este sitio web?</h2>
+				<h2 class="text-uppercase">¿Por qué existe este sitio web?</h2>
 				<p>Este sitio web fue creado para compartir nuestra pasión por el café y el té con todo el mundo. Aquí,
 					no solo
 					encontrarás información sobre las deliciosas bebidas que hacemos, sino también recetas exclusivas,
@@ -87,7 +87,7 @@
 		</section>
 		<section class="equipo">
 			<div class="equipo-lista">
-				<h2>Nuestro equipo</h2>
+				<h2 class="text-uppercase">Nuestro equipo</h2>
 				<p><strong>Camila Soto</strong> (Ayudante de Barista)</p>
 				<p><strong>Juana Capetillo</strong> (Barista principal)</p>
 				<p><strong>Andrés Flores</strong> (Maestro de alimentos)</p>
@@ -101,43 +101,38 @@
 		</section>
 	</main>
 	<!--Inicio Footer-->
-	<footer class=" pt-5 pb-4">
-		<div class="container text-center text-md-start">
-			<div class="row text-center text-md-start">
-				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-					<a href="/index.html"><img src="/assets/Pic/coffee-and-tea-removed.png" width="100"></a>
-				</div>
-				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-					<h5 class="text-uppercase mb-4 font-weight-bold dark-green">Coffee & Tea</h5>
-					<hr class="mb-4">
-					<p>
-						<li class="fa-brands fa-github me-2 dark-green" target="_blank"></li><a
-							href="https://github.com/IgnacioBaezz" class="dark-green" target="_blank">Ignacio
-							Baez</a><br>
-						<li class="fa-brands fa-github me-2 dark-green" target="_blank"></li><a
-							href="https://github.com/mainob" class="dark-green" target="_blank">Macarena Bustamante</a>
-						<br>
-						<li class="fa-brands fa-github me-2 dark-green" target="_blank"></li><a
-							href="https://github.com/Nickollesilva" class="dark-green" target="_blank">Nickolle
-							Silva</a> <br>
-						<li class="fa-brands fa-github me-2 dark-green" target="_blank"></li><a
-							href="https://github.com/svnhuezv" class="dark-green" target="_blank">Raul Sanhueza</a>
-					</p>
-				</div>
-
-				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-					<h5 class="text-uppercase mb-4 font-weight-bold dark-green">Correo</h5>
-					<hr class="mb-4">
-					<p>
-						<i class="fa-solid fa-envelope dark-green me-2"></i><a
-							href="https://github.com/Generation-Chile/tifc2-ad-07-lab-the-blog-site-group-assessment-farmacode-cats.git"
-							class="dark-green" target="_blank">Coffeeandtea@farmacodecats.org</a>
-					</p>
-				</div>
-
-			</div>
-		</div>
-	</footer>
+	<footer class="container-fluid my-3 py-3">
+        <div class="row justify-content-around text-center">
+            <div class="col-5 gx-3 my-3 col-md-3 mt-3 d-none d-md-block">
+                <a href="index.html"><img src="/assets/Pic/coffee-and-tea-removed.png" width="100"></a>
+            </div>
+            <div class="col-5 gx-3 my-3 col-md-3 mt-3 text-start dark-green">
+                <h5 class="text-uppercase mb-2 font-weight text-center">Coffee & Tea</h5>
+                <hr>
+                <div class="row justify-content-center">
+                    <a href="https://github.com/IgnacioBaezz" class="dark-green col-12 text-center mx-auto"
+                        target="_blank"><i class="fa-brands fa-github me-2"></i>Ignacio Báez</a><br>
+                    <a href="https://github.com/mainob" class="dark-green col-12 text-center mx-auto" target="_blank"><i
+                            class="fa-brands fa-github me-2"></i>Macarena Bustamante</a><br>
+                    <a href="https://github.com/Nickollesilva" class="dark-green col-12 text-center mx-auto"
+                        target="_blank"><i class="fa-brands fa-github me-2"></i>Nickolle Silva</a><br>
+                    <a href="https://github.com/svnhuezv" class="dark-green col-12 text-center mx-auto"
+                        target="_blank"><i class="fa-brands fa-github me-2"></i>Raul Sanhueza</a>
+                </div>
+            </div>
+            <div class="col-5 gx-3 my-3 col-md-3 mt-3">
+                <h5 class="text-uppercase mb-2 font-weight-bold dark-green">Datos de contacto</h5>
+                <hr>
+                <div class="row justify-content-center">
+                    <a href="https://github.com/Generation-Chile/tifc2-ad-07-lab-the-blog-site-group-assessment-farmacode-cats.git"
+                        class="dark-green mb-2" target="_blank"><i
+                            class="fa-solid fa-envelope"></i> coffee&tea@fccats.org</a>
+                    <p class="dark-green"><i class="fa-solid fa-phone"></i> +569-11112222</p>
+                    <a href="contact.html" class="dark-green fs-5">Contactanos directamente!</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 	<!--Fin Footer-->
 
 	<!--Links Externos-->
