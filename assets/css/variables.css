@@ -1,0 +1,10 @@
+:root{
+    /*Fonts*/
+    --font-main:"Cal Sans", sans-serif;
+
+    /*Paleta de colores*/
+    --principal: #F0BB78;
+    --beige: #F5ECD5;
+    --verde-claro: #A4B465;
+    --verde-oscuro: #626F47;
+}
