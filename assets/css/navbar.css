@@ -14,3 +14,7 @@ nav .navbar-brand {
 nav .navbar-brand:hover {
     color: var(--verde-claro);
 }
+
+nav {
+    background-color: var(--beige);
+}
