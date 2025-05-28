@@ -1,0 +1,264 @@
+ body {
+     font-family: var(--font-main);
+     background: linear-gradient(135deg, var(--beige) 0%, #fff 100%);
+     color: var(--verde-oscuro);
+     line-height: 1.6;
+ }
+
+ .navbar {
+     background: linear-gradient(135deg, var(--principal) 0%, var(--verde-claro) 100%);
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .navbar-brand {
+     color: var(--verde-oscuro) !important;
+     font-size: 1.8rem;
+     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+ }
+
+ .nav-link {
+     color: var(--verde-oscuro) !important;
+     font-weight: 500;
+     transition: all 0.3s ease;
+     position: relative;
+ }
+
+ .nav-link:hover {
+     color: #fff !important;
+     transform: translateY(-2px);
+ }
+
+ .nav-link::after {
+     content: '';
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: 0;
+     left: 50%;
+     background-color: #fff;
+     transition: all 0.3s ease;
+     transform: translateX(-50%);
+ }
+
+ .nav-link:hover::after {
+     width: 80%;
+ }
+
+ .blog-header {
+     background: linear-gradient(135deg, var(--verde-claro) 0%, var(--principal) 100%);
+     color: var(--verde-oscuro);
+     padding: 4rem 0;
+     margin-bottom: 3rem;
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .blog-header::before {
+     content: '';
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 200%;
+     height: 200%;
+     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="coffee-beans" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="2" fill="rgba(98,111,71,0.1)"/><circle cx="15" cy="15" r="2" fill="rgba(98,111,71,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23coffee-beans)"/></svg>') repeat;
+     animation: float 20s linear infinite;
+     z-index: 0;
+ }
+
+ @keyframes float {
+     0% {
+         transform: translate(0, 0) rotate(0deg);
+     }
+
+     100% {
+         transform: translate(-20px, -20px) rotate(360deg);
+     }
+ }
+
+ .blog-header h1 {
+     position: relative;
+     z-index: 1;
+     font-size: 3.5rem;
+     font-weight: 700;
+     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+     margin-bottom: 1rem;
+ }
+
+ .blog-header p {
+     position: relative;
+     z-index: 1;
+     font-size: 1.3rem;
+     max-width: 600px;
+     margin: 0 auto;
+     opacity: 0.9;
+ }
+
+ .blog-container {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 0 20px;
+ }
+
+ .blog-article {
+     background: #fff;
+     border-radius: 20px;
+     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+     margin-bottom: 3rem;
+     overflow: hidden;
+     transition: all 0.3s ease;
+     border: 2px solid transparent;
+     position: relative;
+ }
+
+ .blog-article::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     height: 5px;
+     background: linear-gradient(90deg, var(--principal), var(--verde-claro), var(--principal));
+ }
+
+ .blog-article:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+     border-color: var(--verde-claro);
+ }
+
+ .article-header {
+     background: linear-gradient(135deg, var(--beige) 0%, #fff 100%);
+     padding: 2.5rem;
+     border-bottom: 1px solid var(--verde-claro);
+     position: relative;
+ }
+
+ .article-title {
+     color: var(--verde-oscuro);
+     font-size: 2.2rem;
+     font-weight: 700;
+     margin-bottom: 1rem;
+     line-height: 1.3;
+ }
+
+ .article-meta {
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+     color: var(--verde-claro);
+     font-size: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ .article-meta i {
+     color: var(--principal);
+     margin-right: 0.5rem;
+ }
+
+ .article-excerpt {
+     color: #666;
+     font-size: 1.1rem;
+     font-style: italic;
+     margin: 0;
+ }
+
+ .article-content {
+     padding: 2.5rem;
+     font-size: 1.1rem;
+     line-height: 1.8;
+ }
+
+ .article-content p {
+     margin-bottom: 1.5rem;
+ }
+
+ .article-content h3 {
+     color: var(--verde-oscuro);
+     font-size: 1.5rem;
+     margin: 2rem 0 1rem 0;
+     font-weight: 600;
+ }
+
+ .read-more-btn {
+     background: linear-gradient(135deg, var(--principal), var(--verde-claro));
+     color: var(--verde-oscuro);
+     padding: 12px 30px;
+     border: none;
+     border-radius: 25px;
+     font-weight: 600;
+     text-decoration: none;
+     display: inline-block;
+     transition: all 0.3s ease;
+     margin-top: 1rem;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .read-more-btn:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+     color: var(--verde-oscuro);
+     text-decoration: none;
+ }
+
+ .category-tag {
+     background: var(--verde-claro);
+     color: #fff;
+     padding: 5px 15px;
+     border-radius: 20px;
+     font-size: 0.9rem;
+     font-weight: 500;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+ }
+
+ .footer {
+     background: var(--verde-oscuro);
+     color: var(--beige);
+     padding: 3rem 0;
+     margin-top: 5rem;
+ }
+
+ .footer h5 {
+     color: var(--principal);
+     margin-bottom: 1.5rem;
+ }
+
+ .footer a {
+     color: var(--beige);
+     text-decoration: none;
+     transition: color 0.3s ease;
+ }
+
+ .footer a:hover {
+     color: var(--principal);
+ }
+
+ .divider {
+     height: 3px;
+     background: linear-gradient(90deg, var(--principal), var(--verde-claro), var(--principal));
+     border: none;
+     margin: 1.5rem 0;
+     border-radius: 2px;
+ }
+
+ @media (max-width: 768px) {
+     .blog-header h1 {
+         font-size: 2.5rem;
+     }
+
+     .article-title {
+         font-size: 1.8rem;
+     }
+
+     .article-header,
+     .article-content {
+         padding: 1.5rem;
+     }
+
+     .article-meta {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 0.5rem;
+     }
+ }
